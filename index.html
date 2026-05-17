@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyle Norman // kylecodesthings</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Syne:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-inner">
+        <span class="nav-logo">KN<span class="accent">.co.za</span></span>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="https://github.com/Normz669" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/kyle-norman-8a450210a"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="grid-lines"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="accent">//</span> Backend Systems Developer
+        </div>
+        <h1 class="hero-name">Kyle<br /><span class="accent">Norman</span></h1>
+        <div class="hero-alias">@Normz669</div>
+        <div class="typewriter-wrap">
+          <span class="typewriter-prefix">$&nbsp;</span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor">▋</span>
+        </div>
+        <p class="hero-bio">
+          I build backend systems that do real work — data pipelines, APIs,
+          optimisation algorithms. I can handle the frontend too, but my focus
+          is on what happens behind the screen. Currently finishing Python,
+          moving to Go.
+        </p>
+        <div class="hero-cta">
+          <a href="portfolio.html" class="btn-primary"
+            >View Portfolio <span>→</span></a
+          >
+          <a
+            href="https://github.com/Normz669"
+            target="_blank"
+            class="btn-ghost"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <div class="hero-stack">
+        <div class="stack-label"><span class="accent">#</span> Stack</div>
+        <div class="stack-items">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">Flask</span>
+          <span class="stack-tag">Go <span class="soon">soon</span></span>
+          <span class="stack-tag">SQL</span>
+          <span class="stack-tag">REST APIs</span>
+          <span class="stack-tag">HTML</span>
+          <span class="stack-tag">CSS</span>
+          <span class="stack-tag">JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="section featured">
+      <div class="section-inner">
+        <div class="section-label">
+          <span class="accent">//</span> Featured Project
+        </div>
+        <div class="featured-card">
+          <div class="featured-card-inner">
+            <div class="featured-meta">
+              <span class="featured-tag">Python</span>
+              <span class="featured-tag">Flask</span>
+              <span class="featured-tag">Algorithms</span>
+              <span class="featured-tag">REST API</span>
+              <span class="featured-status">Deployed</span>
+            </div>
+            <h2 class="featured-title">Production Intelligence Dashboard</h2>
+            <p class="featured-desc">
+              A purpose-built backend system deployed for a manufacturing client
+              to eliminate manual quoting, reduce production delays, and prevent
+              overstocking. The system ingests supplier pricing data, applies
+              statistical analysis to group products into pricing tiers, and
+              uses a dynamic programming algorithm to find the optimal
+              purchasing combination for any given production run — in
+              milliseconds.
+            </p>
+            <div class="featured-highlights">
+              <div class="highlight-item">
+                <span class="highlight-val">IQR</span>
+                <span class="highlight-label">Outlier Detection</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-val">DP</span>
+                <span class="highlight-label">Purchase Optimiser</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-val">300+</span>
+                <span class="highlight-label">Products Managed</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-val">~10s</span>
+                <span class="highlight-label">vs 30min manual</span>
+              </div>
+            </div>
+            <a href="portfolio.html" class="featured-link"
+              >Read more <span>→</span></a
+            >
+          </div>
+          <div class="featured-card-visual">
+            <div class="terminal">
+              <div class="terminal-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot tgreen"></span>
+                <span class="terminal-title">optimiser.py</span>
+              </div>
+              <div class="terminal-body">
+                <div class="t-line">
+                  <span class="t-comment"># Dynamic programming optimiser</span>
+                </div>
+                <div class="t-line">
+                  <span class="t-keyword">def</span>
+                  <span class="t-fn">optimize_purchase</span>(required, prices):
+                </div>
+                <div class="t-line t-indent">
+                  <span class="t-keyword">for</span> i
+                  <span class="t-keyword">in</span>
+                  <span class="t-fn">range</span>(1, target + 1):
+                </div>
+                <div class="t-line t-indent2">
+                  <span class="t-keyword">for</span> size
+                  <span class="t-keyword">in</span> available:
+                </div>
+                <div class="t-line t-indent3">
+                  <span class="t-keyword">if</span> dp[i - size]
+                  <span class="t-keyword">is not</span> None:
+                </div>
+                <div class="t-line t-indent4">
+                  new_cost = prev + costs[size]
+                </div>
+                <div class="t-line t-indent4">
+                  <span class="t-keyword">if</span> cheaper(new_cost, dp[i]):
+                </div>
+                <div class="t-line t-indent5">dp[i] = (new_cost, combo)</div>
+                <div class="t-line">&nbsp;</div>
+                <div class="t-line">
+                  <span class="t-comment"># Output</span>
+                </div>
+                <div class="t-line">
+                  <span class="t-string">"total_cost"</span>:
+                  <span class="t-num">847.50</span>,
+                </div>
+                <div class="t-line">
+                  <span class="t-string">"leftover_g"</span>:
+                  <span class="t-num">150</span>,
+                </div>
+                <div class="t-line">
+                  <span class="t-string">"profit"</span>:
+                  <span class="t-num orange">2341.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY BUILDING -->
+    <section class="section building">
+      <div class="section-inner">
+        <div class="section-label">
+          <span class="accent">//</span> Currently Building
+        </div>
+        <div class="building-grid">
+          <div class="building-card">
+            <div class="building-icon">⚔️</div>
+            <h3>TTRPG Virtual Tabletop</h3>
+            <p>
+              A virtual tabletop for TTRPG sessions — complete with character
+              creator and campaign manager. Backend-heavy, built around
+              real-time state management and complex data relationships.
+            </p>
+            <div class="building-tags">
+              <span>Personal Project</span>
+              <span>In Planning</span>
+            </div>
+          </div>
+          <div class="building-card">
+            <div class="building-icon">🐹</div>
+            <h3>Learning Go</h3>
+            <p>
+              Transitioning from Python to Go for backend systems. Go's
+              performance, concurrency model, and strong typing make it the
+              right tool for serious backend work.
+            </p>
+            <div class="building-tags">
+              <span>Language</span>
+              <span>Coming Soon</span>
+            </div>
+          </div>
+          <div class="building-card">
+            <div class="building-icon">🎓</div>
+            <h3>boot.dev — Backend Developer Track</h3>
+            <p>
+              <p>Working through the Backend Development track on boot.dev — data structures, algorithms, and backend fundamentals. Building real projects alongside every concept.</p>
+            </p>
+            <div class="building-tags">
+              <span>Learning</span>
+              <span>Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-strip">
+      <div class="section-inner about-inner">
+        <div class="about-text">
+          <div class="section-label"><span class="accent">//</span> About</div>
+          <p>
+            Self-taught developer with a focus on backend systems. I started
+            with Python and frontend basics, and I'm building toward Go and
+            serious backend infrastructure. I learn by building real things that
+            solve real problems — not toy projects.
+          </p>
+          <p>
+            Based in South Africa. Open to remote work and interesting problems.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-val accent">1</span>
+            <span class="stat-label">Deployed Client Project</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val accent">2+</span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val accent">∞</span>
+            <span class="stat-label">Problems to Solve</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <span class="nav-logo">KN<span class="accent">.dev</span></span>
+        <div class="footer-links">
+          <a href="https://github.com/Normz669" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/kyle-norman-8a450210a"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        <span class="footer-copy"
+          >Built by Kyle Norman // kylecodesthings.co.za</span
+        >
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio // Kyle Norman</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Syne:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <span class="nav-logo">KN<span class="accent">.dev</span></span>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html" class="active">Portfolio</a>
+          <a href="https://github.com/Normz669" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/kyle-norman-8a450210a"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="hero-bg">
+        <div class="grid-lines"></div>
+        <div class="glow glow-1"></div>
+      </div>
+      <div class="page-hero-content">
+        <div class="hero-tag"><span class="accent">//</span> Work</div>
+        <h1 class="page-title">Portfolio</h1>
+        <p class="page-subtitle">Projects built, deployed, and learned from.</p>
+      </div>
+    </section>
+
+    <section class="section portfolio-section">
+      <div class="section-inner">
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-header-left">
+              <div class="project-number accent">01</div>
+              <div>
+                <div class="project-status deployed">● Deployed</div>
+                <h2 class="project-title">Production Intelligence Dashboard</h2>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>REST API</span>
+              <span>Algorithms</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-desc">
+              <p>
+                A full-stack production costing system built and deployed for a
+                manufacturing client. The system replaces a manual 20–30 minute
+                quoting process with a sub-10-second automated calculation —
+                covering material costs, purchasing optimisation, pricing tiers,
+                and profit margins.
+              </p>
+              <p>
+                The client needed a reliable way to cost any production run
+                without specialist knowledge or complex spreadsheets. The system
+                handles all the business logic behind the scenes and presents a
+                clean, actionable summary.
+              </p>
+
+              <h4>Technical highlights</h4>
+              <ul>
+                <li>
+                  <strong>IQR outlier detection</strong> — statistically groups
+                  300+ products into fair pricing tiers, isolating anomalous
+                  pricing that would skew averages
+                </li>
+                <li>
+                  <strong>Dynamic programming purchase optimiser</strong> —
+                  finds the cheapest combination of available stock sizes for
+                  any required quantity. Replaced a recursive brute-force
+                  approach that struggled at scale; DP version handles 10,000+
+                  unit runs in milliseconds
+                </li>
+                <li>
+                  <strong>Tier pricing formula</strong> — MAX(average, highest ×
+                  1.10) guarantees no losses while keeping prices competitive
+                  across each tier
+                </li>
+                <li>
+                  <strong>Flask REST API</strong> — clean separation between
+                  backend logic and frontend, three endpoints serving the full
+                  application
+                </li>
+                <li>
+                  <strong>CSV → JSON pipeline</strong> — supplier pricing CSVs
+                  are ingested, reshaped, and stored as structured JSON at
+                  startup. Updating prices requires only editing a spreadsheet
+                </li>
+              </ul>
+
+              <h4>Impact</h4>
+              <ul>
+                <li>Quoting time: 20–30 minutes → under 10 seconds</li>
+                <li>Consistent tier-based pricing across 300+ products</li>
+                <li>
+                  Full visibility into actual vs tier cost and real profit per
+                  job
+                </li>
+                <li>Purchasing optimisation prevents overstocking</li>
+              </ul>
+            </div>
+
+            <div class="project-sidebar">
+              <div class="sidebar-block">
+                <div class="sidebar-label">Role</div>
+                <div class="sidebar-val">Sole Developer</div>
+              </div>
+              <div class="sidebar-block">
+                <div class="sidebar-label">Type</div>
+                <div class="sidebar-val">Client Project</div>
+              </div>
+              <div class="sidebar-block">
+                <div class="sidebar-label">Status</div>
+                <div class="sidebar-val accent">Deployed</div>
+              </div>
+              <div class="sidebar-block">
+                <div class="sidebar-label">Stack</div>
+                <div class="sidebar-val">Python, Flask, HTML, CSS, JS</div>
+              </div>
+              <div class="sidebar-block">
+                <div class="sidebar-label">Algorithms</div>
+                <div class="sidebar-val">Dynamic Programming, IQR</div>
+              </div>
+              <div class="sidebar-metrics">
+                <div class="metric">
+                  <span class="metric-val orange">~10s</span>
+                  <span class="metric-label">Quote time</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-val orange">300+</span>
+                  <span class="metric-label">Products</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMING SOON CARDS -->
+        <div class="coming-grid">
+          <div class="coming-card">
+            <div class="coming-number accent">02</div>
+            <h3>TTRPG Virtual Tabletop</h3>
+            <p>
+              Character creator, campaign manager, and real-time session tools
+              for tabletop RPG players. Backend-heavy architecture with complex
+              relational data.
+            </p>
+            <div class="coming-status">In Planning</div>
+          </div>
+          <div class="coming-card">
+            <div class="coming-number accent">03</div>
+            <h3>Go Project</h3>
+            <p>
+              First Go project — TBD. Likely a backend service or CLI tool built
+              to learn Go's concurrency model and standard library.
+            </p>
+            <div class="coming-status">Coming Soon</div>
+          </div>
+          <div class="coming-card add-card">
+            <div class="add-icon accent">+</div>
+            <p>
+              More projects being built. Check back soon or follow on GitHub.
+            </p>
+            <a
+              href="https://github.com/Normz669"
+              target="_blank"
+              class="btn-ghost small"
+              >GitHub →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <span class="nav-logo">KN<span class="accent">.dev</span></span>
+        <div class="footer-links">
+          <a href="https://github.com/Normz669" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/kyle-norman-8a450210a"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="index.html">Home</a>
+        </div>
+        <span class="footer-copy"
+          >Built by Kyle Norman // kylecodesthings.co.za</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
